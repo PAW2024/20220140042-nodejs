@@ -1,0 +1,458 @@
+/* CSS untuk halaman login dan signup */
+body.login-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #7A48B7, #5287CB, #3AAED7);
+  
+}
+
+.login-signup .login-container {
+  background-color: #2A2A68; 
+  border-radius: 10px;
+  padding: 2rem;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.login-signup .login-container .logo {
+  width: 100px; 
+  height: 100px;
+  display: block;
+  margin: 0 auto 1rem auto; 
+}
+
+.login-signup .login-container h1 {
+  font-size: 2.3rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-align: left; 
+  font-weight: bold;
+}
+
+.login-signup .login-container p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  text-align: left; 
+}
+
+.login-signup .login-container p.center-text {
+  text-align: center; 
+}
+
+.login-signup .login-container p a {
+  color: #00ff11; 
+  text-decoration: underline;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.login-signup .login-container .form-control::placeholder {
+  color: #acacac; 
+  font-size: 0.7rem; 
+}
+
+.login-signup .login-container .form-control {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff; 
+}
+
+.login-signup .login-container .form-control:focus {
+  border-color: #bbbbbb;
+  outline: none;
+}
+
+.login-signup .login-container .btn {
+  width: 50%;
+  padding: 0.7rem;
+  background-color: #62AF2D; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: block; 
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.login-signup .login-container .btn:hover {
+  background-color: #ccc; 
+}
+
+
+
+/* CSS untuk Navbar */
+.navbar {
+  background-color: #131418 !important; 
+  border-bottom: 1px solid #524477;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.342);
+}
+
+.navbar-brand img {
+  width: 35px;
+  height: 35px;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+  background-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  gap: 1.5rem; 
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav .nav-item {
+  list-style-type: none;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff; 
+  text-decoration: none; 
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00f2ff; 
+  text-decoration: underline;
+  text-underline-offset: 6px; 
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff; 
+  text-decoration: underline; 
+  text-underline-offset: 6px; 
+}
+
+.navbar .btn {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  color: #ffffff; 
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+  cursor: pointer;
+}
+
+.navbar .btn img {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+
+.navbar .btn:hover {
+  color: #00f2ff; 
+}
+
+
+
+/* CSS untuk halaman index */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; 
+  width: 100%;
+}
+
+main.index {
+  background: linear-gradient(to right, #7A48B7, #5287CB, #3AAED7);
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 80vh;
+  margin: 0;
+  padding-bottom: 60px; 
+}
+
+.card-container {
+  background-color: #2A2A68;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgb(255, 0, 0);
+  color: #ffffff;
+  padding-top: 30px;
+  position: relative;
+  width: 370px;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.card-container .pro {
+  color: #231E39;
+  background-color: #FEBB0B;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card-container .round {
+  border: 1px solid #00f2ff;
+  border-radius: 50%;
+  padding: 7px;
+  margin-bottom: 15px;
+  width: 150px; 
+  height: auto; 
+}
+
+.user-name {
+  margin: 10px 0;
+}
+
+.user-location {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.user-description {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+button.primary {
+  background-color: #725CF9;
+  border: 1px solid #725CF9;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+  margin-top: 10px;
+}
+
+button.primary.ghost {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #725CF9;
+}
+
+.skills {
+  background-color: #0f0f3b;
+  text-align: left; 
+  padding: 15px; 
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.skills-title {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 5px;
+}
+
+.footer-index {
+  background-color: #131418;
+  color: #fff;
+  font-size: 0.9rem;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+  padding: 6px 0;
+}
+
+.footer-index p {
+  margin: 10px 0;
+}
+
+
+
+/* CSS untuk halaman todo */
+body.todo {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #7A48B7, #5287CB, #3AAED7);
+  color: #333;
+}
+
+.container.todo {
+  flex: 1; 
+}
+
+h1.todo {
+  color: #9a9797;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.text-center-h1{
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.add-todo-btn {
+  background-color: #62AF2D;
+  color: #fff;
+  border: none;
+  padding: 6px 50px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-todo-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.todo-list {
+  padding: 1rem;
+  padding-left: 5.6rem;
+}
+
+.todo-card {
+  width: 100%; 
+  max-width: 300px;
+  background-color: #2A2A68;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgb(255, 255, 255);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.todo-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 12px rgb(255, 0, 0); 
+}
+
+.todo-card .card-title {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.todo-card .card-text {
+  color: #ffffff !important;
+}
+
+.todo-card .btn {
+  font-size: 0.9rem;
+  padding: 5px 40px;
+  border-radius: 5px;
+}
+
+.todo-card .btn-success {
+  background-color: #62AF2D; 
+  color: #ffffff;
+  border: none; 
+}
+
+.todo-card .btn-danger {
+  background-color: #ff0000; 
+  color: #ffffff; 
+  border: none; 
+}
+
+.todo-card .btn-success:hover,
+.todo-card .btn-danger:hover {
+  background-color: #f0f0f0; 
+  color: #333; 
+  border: none; 
+}
+
+.footer {
+  text-align: center;
+  padding-top: 5px;
+  background-color: #131418;
+  border-top: 1px solid #000000;
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-top: auto; 
+}
+
+.footer p {
+  margin: 13px 0;
+}
+
+
+
+/* CSS untuk halaman Contact */
+.footer-contact {
+  background-color: #131418;
+  color: #fff;
+  font-size: 0.9rem;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+  padding: 6px 0;
+}
+
+.footer-contact p {
+  margin: 10px 0;
+}
+
+.content-wrapper {
+  background: linear-gradient(to left, #7A48B7, #5287CB, #3AAED7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  padding-bottom: 300px; 
+  box-sizing: border-box; 
+  height: 90vh;
+}
+
+label {
+  color: #ffffff; 
+}
+
+h1 {
+  color: #FFFFFF; 
+  font-size: 2.5rem; 
+  text-align: center; 
+}
